@@ -1,0 +1,21 @@
+name: Node CI
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+
+      - name: Show Node version
+        run: node --version
+
+      - name: Show npm version
+        run: npm --version

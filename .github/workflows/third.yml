@@ -19,4 +19,4 @@ jobs:
       - name: List files
         run: |
           echo "=== FILE LIST ==="
-          ls -la
+          ls

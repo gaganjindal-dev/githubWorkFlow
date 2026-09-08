@@ -1,0 +1,22 @@
+name: Hello GitHub Actions
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hi Gagan this side"
+
+      - name: Current directory
+        run: |
+          echo "=== CURRENT DIRECTORY ==="
+          pwd
+
+      - name: List files
+        run: |
+          echo "=== FILE LIST ==="
+          ls -la

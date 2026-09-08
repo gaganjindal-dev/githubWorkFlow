@@ -9,4 +9,7 @@ jobs:
 
     steps:
       - name: Say Hello
-        run: echo "Hello from GitHub Actions!"
+        run: |
+           echo "Hello Gagan!"
+           echo "Learning GitHub Actions."
+           echo "This is my first workflow."
